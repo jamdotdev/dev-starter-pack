@@ -5,22 +5,25 @@ export const tools: {
   href: string;
   details: string;
   icon: JSX.Element;
+  category: string;
 }[] = [
   {
     title: "Jam",
     description: "Catch bugs and resolve them faster",
     offer: "Enjoy 3 months of the Pro Tier for $1.",
-    details: "missing detials",
-    href: "missing href",
+    details: "missing final copy",
+    href: "#",
     icon: <Jam />,
+    category: "Fix code",
   },
   {
     title: "LogRocket",
     description: "Monitor frontend performance and issues",
     offer: "Enjoy 3 months of the Pro Tier for $1.",
-    details: "missing detials",
-    href: "missing href",
+    details: "missing final copy",
+    href: "#",
     icon: <LogRocket />,
+    category: "Fix code",
   },
   {
     title: "Cloudflare",
@@ -31,22 +34,25 @@ export const tools: {
     details:
       'Apply to our Startup Program and use code "devstarterpack" in promo code box.',
     icon: <Cloudflare />,
+    category: "Ship code",
   },
   {
     title: "Replit",
     description: "Cloud IDE",
     offer: "Enjoy 3 months of the Pro Tier for $1.",
-    details: "missing detials",
-    href: "missing href",
+    details: "missing final copy",
+    href: "#",
     icon: <Replit />,
+    category: "Write code",
   },
   {
     title: "Sourcegraph",
     description: "AI copilot plus search",
     offer: "Enjoy 3 months of the Pro Tier for $1.",
-    details: "missing detials",
-    href: "missing href",
+    details: "missing final copy",
+    href: "#",
     icon: <Sourcegraph />,
+    category: "Write code",
   },
   {
     title: "Clerk",
@@ -56,6 +62,7 @@ export const tools: {
     details:
       'Apply to Startup Program and select "Dev Starter Pack" under "Are you working with any of these partners?”',
     icon: <Clerk />,
+    category: "Connect code",
   },
   {
     title: "Prisma",
@@ -64,30 +71,34 @@ export const tools: {
     href: "https://www.prisma.io/startups",
     details: "Fill out the linked form.",
     icon: <Prisma />,
+    category: "Connect code",
   },
   {
     title: "Pinecone",
     description: "Vector database",
     offer: "Enjoy 3 months of the Pro Tier for $1.",
-    details: "missing detials",
-    href: "missing href",
+    details: "missing final copy",
+    href: "#",
     icon: <Pinecode />,
+    category: "Connect code",
   },
   {
     title: "LaunchDarkly",
     description: "Release, monitor, and optimize software in production",
     offer: "Enjoy 6 months of premium access for free.",
-    details: "missing detials",
-    href: "missing href",
+    details: "missing final copy",
+    href: "#",
     icon: <LaunchDarkly />,
+    category: "Ship code",
   },
   {
     title: "Stack Overflow",
     description: "AI knowledge base for engineering teams",
     offer: "Enjoy 6 months of premium access for free.",
     details: "missing details",
-    href: "missing href",
+    href: "#",
     icon: <StackOverflow />,
+    category: "Write code",
   },
   {
     title: "Warp",
@@ -96,6 +107,7 @@ export const tools: {
     href: "https://www.warp.dev/?utm_source=jam&utm_medium=partner&utm_campaign=devstarterpack",
     details: "Sign up for the promotion here",
     icon: <Warp />,
+    category: "Write code",
   },
   {
     title: "Mixpanel",
@@ -105,14 +117,16 @@ export const tools: {
     details:
       'Select "Dev Starter Pack" as the referral partner on the application dropdown.',
     icon: <Mixpanel />,
+    category: "Fix code",
   },
   {
     title: "OpenAI",
     description: "Build and scale AI experiences",
     offer: "Enjoy 6 months of premium access for free.",
     details: "missing details",
-    href: "missing href",
+    href: "#",
     icon: <OpenAI />,
+    category: "Ship code",
   },
 ];
 
