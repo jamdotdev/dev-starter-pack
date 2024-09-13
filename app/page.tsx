@@ -5,6 +5,7 @@ import { tools } from "@/app/utils/tools-list";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { CheckIcon, CopyIcon } from "lucide-react";
+import { Footer } from "@/components/ui/footer";
 
 const categories = ["Write code", "Ship code", "Fix code", "Connect code"];
 
@@ -87,11 +88,13 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-6">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-14">
         {filteredTools.map((tool) => (
           <Card key={tool.title} {...tool} />
         ))}
       </div>
+
+      <Footer />
     </main>
   );
 }

@@ -32,9 +32,9 @@ export function Arrow24x24() {
       <path
         d="M10 6.5H17.5M17.5 6.5V14M17.5 6.5L6.5 17.5"
         stroke="#1E2624"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
