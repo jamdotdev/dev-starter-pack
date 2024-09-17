@@ -11,7 +11,7 @@ interface CardProps {
   icon: React.ReactNode;
   description: string;
   offer: string;
-  details: string;
+  details: string | JSX.Element;
   href: string;
 }
 

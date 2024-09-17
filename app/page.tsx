@@ -47,7 +47,7 @@ export default function Home() {
           Dev Starter Pack
         </h1>
 
-        <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-4 leading-6 font-light text-balance">
+        <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-4 leading-6 text-balance">
           A starter pack of free and discounted dev tools for builders creating
           the next wave of world-changing companies:
         </p>
