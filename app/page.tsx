@@ -88,10 +88,20 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-14">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-6">
         {filteredTools.map((tool) => (
           <Card key={tool.title} {...tool} />
         ))}
+      </div>
+
+      <div className="container mb-16">
+        <div className="share-banner bg-[#F3F3F3] w-full p-6 rounded-xl flex flex-col justify-between">
+          <h3 className="text-[28px] mb-0">
+            Show us what you're building with this stack of tools
+          </h3>
+
+          <span className="text-muted-foreground">Share</span>
+        </div>
       </div>
 
       <Footer />

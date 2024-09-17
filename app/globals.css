@@ -18,6 +18,13 @@ section.illustration {
   background-position: center;
 }
 
+.share-banner {
+  background: #f3f3f3 url("/banner-bg.webp") no-repeat;
+  background-size: auto 200%;
+  background-position: bottom right;
+  min-height: 128px;
+}
+
 .container {
   @apply max-w-7xl mx-auto px-4 antialiased;
 }
