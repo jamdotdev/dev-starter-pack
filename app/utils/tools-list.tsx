@@ -43,7 +43,7 @@ export const tools: {
     href: "#",
     details: "TBA",
     icon: <Sourcegraph />,
-    category: "Write code",
+    category: "Type code",
   },
   {
     title: "Clerk",
@@ -91,7 +91,7 @@ export const tools: {
       </>
     ),
     icon: <Warp />,
-    category: "Write code",
+    category: "Type code",
   },
   {
     title: "Mixpanel",
