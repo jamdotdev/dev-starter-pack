@@ -38,9 +38,11 @@ export const Card = (props: CardProps) => {
 
           <TooltipProvider>
             <Tooltip delayDuration={0}>
-              <TooltipTrigger className="opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity">
-                <InfoIcon className="w-[16px] h-[16px] text-primary" />
-              </TooltipTrigger>
+              {props.details && (
+                <TooltipTrigger className="opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity">
+                  <InfoIcon className="w-[16px] h-[16px] text-primary" />
+                </TooltipTrigger>
+              )}
               <TooltipContent side="left" align="center">
                 <span>{props.details}</span>
               </TooltipContent>
