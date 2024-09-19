@@ -10,8 +10,8 @@ export const tools: {
   {
     title: "Jam",
     description: "Catch bugs and resolve them faster",
-    offer: "3 months of Jam Pro for $1",
-    href: "jam.dev/?ref=devstarterpack",
+    offer: "6 months of Jam Pro for free",
+    href: "https://jam.dev/?ref=devstarterpack",
     details: "",
     icon: <Jam />,
     category: "Fix code",
@@ -20,7 +20,7 @@ export const tools: {
     title: "LogRocket",
     description: "AI-first session replay & analytics",
     offer: "Up to 50% off Pro Plan (1 year)",
-    href: "http://logrocket.com/?ref=devstarterpack",
+    href: "https://logrocket.com/?ref=devstarterpack",
     details: 'Mention code "devstarterpack" in the Intercom chat',
     icon: <LogRocket />,
     category: "Fix code",
@@ -30,7 +30,7 @@ export const tools: {
     description: "Build, deploy, and deliver code and AI apps globally",
     offer:
       "Access to Cloudflare for Startup Program and up to $250K of credits",
-    href: "http://cloudflare.com/forstartups",
+    href: "https://cloudflare.com/forstartups",
     details:
       'Apply to our Startup Program and use code "devstarterpack" in promo code box.',
     icon: <Cloudflare />,
@@ -38,12 +38,12 @@ export const tools: {
   },
   {
     title: "Sourcegraph",
-    description: "TBA",
-    offer: "TBA",
-    href: "#",
+    description: "Cody - AI Coding Assistant by Sourcegraph",
+    offer: "1 month of Cody Pro for free ",
+    href: "https://sourcegraph.com/?ref=devstarterpack",
     details: "",
     icon: <Sourcegraph />,
-    category: "Type code",
+    category: "Write code",
   },
   {
     title: "Clerk",
@@ -58,7 +58,7 @@ export const tools: {
   {
     title: "Prisma",
     description: "Prisma simplifies working with databases",
-    offer: "Up to 50% off on usage fees for annual subscriptions",
+    offer: "50% off usage fees w/ annual subscription",
     href: "https://www.prisma.io/startups",
     details: "Fill out the linked form.",
     icon: <Prisma />,
@@ -66,10 +66,9 @@ export const tools: {
   },
   {
     title: "LaunchDarkly",
-    description: "TBA",
-    offer:
-      "Access to LaunchDarkly's Free Developer Plan with additional early feature previews, and a direct line to hands-on support with our Developer Experience team.",
-    href: "",
+    description: "Feature flags & experimentation",
+    offer: "Dev plan w/ AI features & advanced support",
+    href: "https://launchdarkly.com/",
     details: "",
     icon: <LaunchDarkly />,
     category: "Ship code",
@@ -91,7 +90,7 @@ export const tools: {
       </>
     ),
     icon: <Warp />,
-    category: "Type code",
+    category: "Write code",
   },
   {
     title: "Mixpanel",

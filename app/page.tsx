@@ -7,10 +7,16 @@ import { cn } from "@/lib/utils";
 import { CheckIcon, CopyIcon } from "lucide-react";
 import { Footer } from "@/components/ui/footer";
 
-const categories = ["Type code", "Ship code", "Fix code", "Connect code"];
+const categories = [
+  "All",
+  "Write code",
+  "Ship code",
+  "Fix code",
+  "Connect code",
+];
 
 export default function Home() {
-  const [selected, setSelected] = useState<string | null>(null);
+  const [selected, setSelected] = useState<string>("All");
   const [promoCode, setPromoCode] = useState<string>("devstarterpack");
 
   const handleCopyClick = () => {
@@ -20,14 +26,15 @@ export default function Home() {
     });
   };
 
-  const filteredTools = selected
-    ? tools.filter((tool) => tool.category === selected)
-    : tools;
+  const filteredTools =
+    selected === "All"
+      ? tools
+      : tools.filter((tool) => tool.category === selected);
 
   return (
     <main className="min-h-screen flex flex-col">
       <div className="flex-1">
-        <header className="flex flex-1 justify-center p-5">
+        <header className="flex flex-1 justify-center p-5 px-4">
           <div className="flex bg-[#FDDEB3] rounded-md font-medium">
             <div
               role="button"
@@ -43,14 +50,14 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="illustration container text-center mb-14 py-20">
+        <section className="illustration container text-center mb-10 py-10 sm:mb-14 sm:py-20">
           <h1 className="text-3xl font-semibold mb-5 leading-[1]">
             Dev Starter Pack
           </h1>
 
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-4 leading-6 text-balance">
-            A starter pack of free and discounted dev tools for builders
-            creating the next wave of world-changing companies:
+            Startup essential pack.
+            <br /> Use this code to save on the below software:
           </p>
 
           <div className="flex flex-1 justify-center">
@@ -76,11 +83,10 @@ export default function Home() {
           {categories.map((category) => (
             <button
               key={category}
-              onClick={() => {
-                setSelected((prev) => (prev === category ? null : category));
-              }}
+              onClick={() => setSelected(category)}
               className={cn(
-                "text-[12px] sm:text-[14px] sm:px-4 sm:py-2 font-medium px-2 py-1 rounded-md",
+                "text-[14px] font-medium px-3 py-2 rounded-md leading-[1.1]",
+                "sm:px-4 sm:leading-normal",
                 selected === category ? "bg-primary text-white" : "bg-muted"
               )}
             >
@@ -96,7 +102,18 @@ export default function Home() {
         </div>
 
         <div className="container mb-16">
-          <div className="share-banner bg-[#F3F3F3] w-full p-6 rounded-xl flex flex-col justify-between">
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={() => {
+              window.open(
+                "https://8wvzuv0oszm.typeform.com/dev-pack-builds",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
+            className="share-banner bg-[#F3F3F3] w-full p-6 rounded-xl flex flex-col justify-between"
+          >
             <h3 className="text-[28px] mb-0">
               Show us what you&apos;re building with this stack of tools
             </h3>

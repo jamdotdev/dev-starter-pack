@@ -17,7 +17,7 @@ export function Footer() {
         </a>
 
         <a
-          href="#"
+          href="https://8wvzuv0oszm.typeform.com/apply-devpack"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground flex items-center hover:underline gap-1"
