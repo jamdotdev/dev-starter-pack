@@ -104,9 +104,9 @@ export const tools: {
   },
   {
     title: "Intercom",
-    description: "Help desk + AI chatbot + support tools",
+    description: "AI-first customer service platform",
     offer: "Free year of Intercom",
-    href: "https://app.intercom.com/a/apps/jgthdrxl/teams-checkout/early-stage-application?partner=true&solution_id=20",
+    href: "https://www.intercom.com/startups-program?utm_source=external-website&utm_medium=referral&utm_campaign=es_partner_direct_perk-platform_dev-starter-pack&utm_term=dev%20starter%20pack&utm_content=perk%20platform",
     details: "Select Dev Starter Pack as your partner.",
     icon: <Intercom />,
     category: "Fix code",
