@@ -1,5 +1,4 @@
-import ShowUs from "@/components/ui/show-us-banner";
-import React from "react";
+import Banner from "@/components/ui/banner";
 
 type Tool = {
   title: string;
@@ -13,6 +12,7 @@ type Tool = {
 
 type CustomComponent = {
   customComponent: JSX.Element;
+  id: string;
 };
 
 type ToolOrCustomComponent = Tool | CustomComponent;
@@ -67,7 +67,15 @@ export const tools: ToolOrCustomComponent[] = [
     category: "Connect code",
   },
   {
-    customComponent: <ShowUs />,
+    customComponent: (
+      <Banner
+        title="Show us what you're building with this stack of tools"
+        url="https://8wvzuv0oszm.typeform.com/dev-pack-builds"
+        buttonText="Share"
+        backgroundImage="/show-us.webp"
+      />
+    ),
+    id: "0",
   },
   {
     title: "Prisma",
@@ -105,6 +113,17 @@ export const tools: ToolOrCustomComponent[] = [
     ),
     icon: <Warp />,
     category: "Write code",
+  },
+  {
+    customComponent: (
+      <Banner
+        title="Join the pack"
+        url="https://8wvzuv0oszm.typeform.com/apply-devpack"
+        buttonText="Contact"
+        backgroundImage="/join-the-pack.webp"
+      />
+    ),
+    id: "1",
   },
   {
     title: "Mixpanel",

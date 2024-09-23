@@ -58,7 +58,7 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-4 leading-6 text-balance">
-            Startup essential pack.
+            The essential startup starter kit.
             <br /> Use this code to save on the below software:
           </p>
 
@@ -100,7 +100,11 @@ export default function Home() {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-6 mb-6">
           {filteredTools.map((tool) => {
             if ("customComponent" in tool) {
-              return tool.customComponent;
+              return (
+                <React.Fragment key={tool.id}>
+                  {tool.customComponent}
+                </React.Fragment>
+              );
             }
 
             return <Card key={tool.title} {...tool} />;
