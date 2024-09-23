@@ -20,7 +20,7 @@ export const Card = (props: CardProps) => {
     <a
       href={props.href}
       key={props.title}
-      className="border flex flex-col justify-between p-6 rounded-xl group hover:shadow-lg transition"
+      className="border flex flex-col justify-between p-6 rounded-xl group transition md:hover:shadow-lg"
     >
       <div className="flex flex-col flex-1">
         <div className="ring-1 ring-border flex rounded-2xl overflow-hidden w-16 h-16 mb-5">
@@ -39,7 +39,10 @@ export const Card = (props: CardProps) => {
           <TooltipProvider>
             <Tooltip delayDuration={0}>
               {props.details && (
-                <TooltipTrigger className="opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity">
+                <TooltipTrigger
+                  onClick={(event) => event.preventDefault()}
+                  className="py-1 opacity-100 md:opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity"
+                >
                   <InfoIcon className="w-[16px] h-[16px] text-primary" />
                 </TooltipTrigger>
               )}
