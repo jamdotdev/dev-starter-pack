@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Dev Starter Pack",
-  description: "",
+  description: "The essential startup starter kit",
   openGraph: {
     images: [
       {

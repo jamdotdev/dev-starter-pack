@@ -49,7 +49,7 @@ export const tools: {
     title: "Clerk",
     description: "Authentication and user management",
     offer: "50% off Clerk's Pro plan for 6 months*",
-    href: "https://clerk.com/startups",
+    href: "https://go.clerk.com/starter-pack",
     details:
       'Apply to Startup Program and select "Dev Starter Pack" under "Are you working with any of these partners?"',
     icon: <Clerk />,
@@ -68,7 +68,7 @@ export const tools: {
     title: "LaunchDarkly",
     description: "Feature flags & experimentation",
     offer: "Dev plan w/ AI features & advanced support",
-    href: "https://launchdarkly.com/",
+    href: "https://app.launchdarkly.com/signup?utm_source=jam&utm_medium=referral&utm_campaign=starter-pack",
     details: "",
     icon: <LaunchDarkly />,
     category: "Ship code",
@@ -96,10 +96,19 @@ export const tools: {
     title: "Mixpanel",
     description: "Product analytics for web and mobile apps",
     offer: "First year free with enterprise-level features",
-    href: "https://mixpanel.com/startups-apply/?utm_source=linkedin&utm_medium=paidsocial&utm_campaign=linkedin-apac-startup-education-single_image&utm_content=startup-program-50kcredits",
+    href: "https://mixpanel.com/startups-apply/?utm_source=dev-alliance&utm_medium=partner-referral&utm_campaign=2024-09-09-Dev-Alliance-Startups&utm_content=startup-program",
     details:
       'Select "Dev Starter Pack" as the referral partner on the application dropdown.',
     icon: <Mixpanel />,
+    category: "Fix code",
+  },
+  {
+    title: "Intercom",
+    description: "Help desk + AI chatbot + support tools",
+    offer: "Free year of Intercom",
+    href: "https://app.intercom.com/a/apps/jgthdrxl/teams-checkout/early-stage-application?partner=true&solution_id=20",
+    details: "Select Dev Starter Pack as your partner.",
+    icon: <Intercom />,
     category: "Fix code",
   },
 ];
@@ -321,6 +330,25 @@ function Mixpanel() {
       <path
         d="M24.7743 29.1783H29.1722C28.0741 28.4912 27.6629 27.5284 27.1112 25.7432L25.4613 19.6278C24.7067 16.8797 24.0873 15.5734 21.0634 15.5734H14.745V17.2232H15.6402C17.493 17.2232 17.7012 17.9102 18.2529 19.9713L19.6946 25.332C20.4493 27.9448 21.6203 29.1783 24.7795 29.1783H24.7743ZM34.9494 29.1783H39.3421C42.5014 29.1783 43.5995 27.9396 44.3595 25.332L45.8009 19.9713C46.3526 17.9102 46.6234 17.2232 48.4137 17.2232H49.3091V15.5734H43.058C39.9666 15.5734 39.3473 16.812 38.6603 19.6278L37.0104 25.7432C36.4587 27.5961 36.0476 28.4912 34.9494 29.1783ZM29.1722 34.945H34.9495L34.9494 29.1783H29.1722V34.945ZM14.745 48.5498H21.0634C24.0873 48.5498 24.7067 47.2434 25.4613 44.4956L27.1112 38.3801C27.6629 36.5949 28.0741 35.632 29.1722 34.945H24.7743C21.6151 34.945 20.4441 36.1837 19.6894 38.7912L18.2477 44.1519C17.696 46.213 17.493 46.9001 15.635 46.9001H14.745V48.5498ZM43.0478 48.5498H49.2986V46.9001H48.4032C46.6181 46.9001 46.3424 46.213 45.7908 44.1519L44.349 38.7912C43.5943 36.1785 42.4962 34.945 39.3317 34.945H34.9495C36.0477 35.632 36.4431 36.5272 36.9948 38.3801L38.6447 44.4956C39.3317 47.3111 39.951 48.5498 43.0426 48.5498H43.0478Z"
         fill="#7856FF"
+      />
+    </svg>
+  );
+}
+
+function Intercom() {
+  return (
+    <svg
+      width="64"
+      height="64"
+      viewBox="0 0 64 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M45.605 14H18.515C17.3196 13.9981 16.1724 14.4712 15.3257 15.3151C14.479 16.1589 14.0021 17.3046 14 18.5V45.5C14 47.985 16.022 50 18.515 50H45.605C46.8004 50.0019 47.9476 49.5288 48.7943 48.6849C49.641 47.8411 50.1179 46.6954 50.12 45.5V18.5C50.12 16.015 48.099 14 45.605 14ZM36.875 20.6C36.875 19.938 37.415 19.4 38.08 19.4C38.745 19.4 39.284 19.938 39.284 20.6V36.633C39.284 37.295 38.744 37.833 38.08 37.833C37.7613 37.8333 37.4555 37.7071 37.2298 37.4821C37.004 37.2571 36.8768 36.9517 36.876 36.633L36.875 20.6ZM30.855 19.993C30.855 19.33 31.395 18.793 32.06 18.793C32.725 18.793 33.265 19.33 33.265 19.993V37.393C33.265 38.056 32.725 38.593 32.06 38.593C31.7413 38.5933 31.4355 38.4671 31.2098 38.2421C30.984 38.0171 30.8568 37.7117 30.856 37.393V19.993H30.855ZM24.836 20.6C24.836 19.938 25.376 19.4 26.04 19.4C26.705 19.4 27.244 19.938 27.244 20.6V36.633C27.244 37.295 26.705 37.833 26.04 37.833C25.7213 37.8333 25.4155 37.7071 25.1898 37.4821C24.964 37.2571 24.8368 36.9517 24.836 36.633V20.6ZM18.816 23C18.816 22.337 19.355 21.8 20.02 21.8C20.685 21.8 21.224 22.337 21.224 23V33.793C21.224 34.456 20.684 34.993 20.02 34.993C19.8622 34.9933 19.7058 34.9624 19.5599 34.9023C19.4139 34.8421 19.2813 34.7538 19.1695 34.6424C19.0577 34.5309 18.9689 34.3986 18.9083 34.2528C18.8476 34.1071 18.8163 33.9509 18.816 33.793V23ZM44.884 41.304C44.699 41.464 40.238 45.193 32.06 45.193C23.882 45.193 19.424 41.463 19.236 41.303C19.1162 41.2007 19.0177 41.0757 18.9463 40.9352C18.8749 40.7948 18.8319 40.6416 18.8199 40.4845C18.8078 40.3274 18.8268 40.1694 18.8759 40.0197C18.925 39.87 19.0032 39.7314 19.106 39.612C19.3138 39.3709 19.6085 39.2218 19.9258 39.197C20.2431 39.1723 20.5574 39.274 20.8 39.48C20.87 39.539 24.853 42.793 32.059 42.793C39.355 42.793 43.277 39.515 43.315 39.483C43.5573 39.2755 43.872 39.1725 44.1902 39.1967C44.5083 39.2209 44.8038 39.3702 45.012 39.612C45.1154 39.7312 45.1942 39.8696 45.2438 40.0194C45.2934 40.1692 45.3128 40.3274 45.3009 40.4847C45.289 40.642 45.246 40.7954 45.1744 40.9361C45.1029 41.0767 45.0042 41.2018 44.884 41.304ZM45.304 33.794C45.304 34.456 44.764 34.994 44.1 34.994C43.9422 34.9943 43.7858 34.9634 43.6399 34.9033C43.4939 34.8431 43.3613 34.7548 43.2495 34.6434C43.1377 34.5319 43.0489 34.3996 42.9883 34.2538C42.9276 34.1081 42.8963 33.9519 42.896 33.794V23C42.896 22.337 43.435 21.8 44.099 21.8C44.764 21.8 45.304 22.337 45.304 23V33.793V33.794Z"
+        fill="black"
       />
     </svg>
   );
