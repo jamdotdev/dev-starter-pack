@@ -16,6 +16,7 @@ const categories = [
 ];
 
 export default function Home() {
+  let filteredTools = tools;
   const [selected, setSelected] = useState<string>("All");
   const [promoCode, setPromoCode] = useState<string>("devstarterpack");
 
@@ -26,10 +27,11 @@ export default function Home() {
     });
   };
 
-  const filteredTools =
-    selected === "All"
-      ? tools
-      : tools.filter((tool) => tool.category === selected);
+  if (selected !== "All") {
+    filteredTools = tools.filter(
+      (tool) => "category" in tool && tool.category === selected
+    );
+  }
 
   return (
     <main className="min-h-screen flex flex-col">
