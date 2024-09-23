@@ -1,4 +1,7 @@
-export const tools: {
+import ShowUs from "@/components/ui/show-us-banner";
+import React from "react";
+
+type Tool = {
   title: string;
   description: string;
   offer: string;
@@ -6,7 +9,15 @@ export const tools: {
   details: string | JSX.Element;
   icon: JSX.Element;
   category: string;
-}[] = [
+};
+
+type CustomComponent = {
+  customComponent: JSX.Element;
+};
+
+type ToolOrCustomComponent = Tool | CustomComponent;
+
+export const tools: ToolOrCustomComponent[] = [
   {
     title: "Jam",
     description: "Catch bugs and resolve them faster",
@@ -54,6 +65,9 @@ export const tools: {
       'Apply to Startup Program and select "Dev Starter Pack" under "Are you working with any of these partners?"',
     icon: <Clerk />,
     category: "Connect code",
+  },
+  {
+    customComponent: <ShowUs />,
   },
   {
     title: "Prisma",
@@ -104,9 +118,9 @@ export const tools: {
   },
   {
     title: "Intercom",
-    description: "Help desk + AI chatbot + support tools",
+    description: "AI-first customer service platform",
     offer: "Free year of Intercom",
-    href: "https://app.intercom.com/a/apps/jgthdrxl/teams-checkout/early-stage-application?partner=true&solution_id=20",
+    href: "https://www.intercom.com/startups-program?utm_source=external-website&utm_medium=referral&utm_campaign=es_partner_direct_perk-platform_dev-starter-pack&utm_term=dev%20starter%20pack&utm_content=perk%20platform",
     details: "Select Dev Starter Pack as your partner.",
     icon: <Intercom />,
     category: "Fix code",
