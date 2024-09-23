@@ -56,7 +56,7 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-4 leading-6 text-balance">
-            Startup essential pack.
+            The essential startup starter kit.
             <br /> Use this code to save on the below software:
           </p>
 
