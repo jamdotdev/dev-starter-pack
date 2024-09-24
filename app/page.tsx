@@ -42,6 +42,13 @@ export default function Home() {
               role="button"
               tabIndex={1}
               className="flex gap-2 items-center p-1 text-black leading-tight"
+              onClick={() => {
+                window.open(
+                  "https://blog.cloudflare.com/launchpad-cohort4-dev-starter-pack/",
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
             >
               <Cloudflare24x24 />
               <span className="text-[11px] md:text-base">
