@@ -14,7 +14,7 @@
 
 ## Dev Starter Pack
 
-A stack of DevTools to start building your startup. [Read the announcement](https://blog.cloudflare.com)
+A stack of DevTools to start building your startup. [Read the announcement](https://blog.cloudflare.com/launchpad-cohort4-dev-starter-pack/)
 
 If you’re a software engineer and you want to build a project or a company all of these tools are available for you off the shelf at [devstarterpack.io](https://devstarterpack.io).
 
