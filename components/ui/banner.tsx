@@ -18,7 +18,7 @@ const Banner = (props: BannerProps) => {
         background: `url(${props.backgroundImage}) center center / cover no-repeat`,
       }}
     >
-      <h3 className="text-[28px] mb-0">{props.title}</h3>
+      <h3 className="text-[28px] mb-2">{props.title}</h3>
       <span className="text-muted-foreground">{props.buttonText}</span>
     </div>
   );

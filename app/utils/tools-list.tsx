@@ -49,22 +49,21 @@ export const tools: ToolOrCustomComponent[] = [
   },
   {
     title: "Sourcegraph",
-    description: "Cody - AI Coding Assistant by Sourcegraph",
+    description: "Cody - AI coding assistant",
     offer: "1 month of Cody Pro for free ",
-    href: "https://sourcegraph.com/?ref=devstarterpack",
+    href: "https://sourcegraph.com/cody?ref=devstarterpack",
     details: "",
     icon: <Sourcegraph />,
     category: "Write code",
   },
   {
-    title: "Clerk",
-    description: "Authentication and user management",
-    offer: "50% off Clerk's Pro plan for 6 months*",
-    href: "https://go.clerk.com/starter-pack",
-    details:
-      'Apply to Startup Program and select "Dev Starter Pack" under "Are you working with any of these partners?"',
-    icon: <Clerk />,
-    category: "Connect code",
+    title: "Intercom",
+    description: "AI-first customer service platform",
+    offer: "Free year of Intercom",
+    href: "https://www.intercom.com/startups-program?utm_source=external-website&utm_medium=referral&utm_campaign=es_partner_direct_perk-platform_dev-starter-pack&utm_term=dev%20starter%20pack&utm_content=perk%20platform",
+    details: "Select Dev Starter Pack as your partner.",
+    icon: <Intercom />,
+    category: "Fix code",
   },
   {
     customComponent: (
@@ -136,13 +135,14 @@ export const tools: ToolOrCustomComponent[] = [
     category: "Fix code",
   },
   {
-    title: "Intercom",
-    description: "AI-first customer service platform",
-    offer: "Free year of Intercom",
-    href: "https://www.intercom.com/startups-program?utm_source=external-website&utm_medium=referral&utm_campaign=es_partner_direct_perk-platform_dev-starter-pack&utm_term=dev%20starter%20pack&utm_content=perk%20platform",
-    details: "Select Dev Starter Pack as your partner.",
-    icon: <Intercom />,
-    category: "Fix code",
+    title: "Clerk",
+    description: "Authentication and user management",
+    offer: "50% off Clerk's Pro plan for 6 months*",
+    href: "https://go.clerk.com/starter-pack",
+    details:
+      'Apply to Startup Program and select "Dev Starter Pack" under "Are you working with any of these partners?"',
+    icon: <Clerk />,
+    category: "Connect code",
   },
 ];
 
