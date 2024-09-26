@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Arrow24x24, Cloudflare24x24 } from "@/app/components/Icons";
+import { Arrow24x24, Cloudflare24x24 } from "@/app/utils/icons";
 import { tools } from "@/app/utils/tools-list";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
