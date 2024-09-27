@@ -1,3 +1,5 @@
+"use client";
+
 import {
   TooltipContent,
   TooltipProvider,
@@ -5,6 +7,7 @@ import {
 } from "@/components/ui/tooltip";
 import { Tooltip } from "@radix-ui/react-tooltip";
 import { InfoIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface CardProps {
   title: string;
@@ -16,6 +19,22 @@ interface CardProps {
 }
 
 export const Card = (props: CardProps) => {
+  const [isTouch, setIsTouch] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  // Safari has issues displaying tooltips.
+  // We need to handle this case manually.
+  useEffect(() => {
+    setIsTouch("ontouchstart" in window);
+  }, []);
+
+  const handleTooltipClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+
+    if (isTouch) {
+      setIsOpen(!isOpen);
+    }
+  };
+
   return (
     <a
       href={props.href}
@@ -37,10 +56,10 @@ export const Card = (props: CardProps) => {
           <p>{props.offer}</p>
 
           <TooltipProvider>
-            <Tooltip delayDuration={0}>
+            <Tooltip delayDuration={0} open={isTouch ? isOpen : undefined}>
               {props.details && (
                 <TooltipTrigger
-                  onClick={(event) => event.preventDefault()}
+                  onClick={handleTooltipClick}
                   className="py-1 opacity-100 md:opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity"
                 >
                   <InfoIcon className="w-[16px] h-[16px] text-primary" />
