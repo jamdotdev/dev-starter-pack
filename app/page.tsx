@@ -37,11 +37,11 @@ export default function Home() {
     <main className="min-h-screen flex flex-col">
       <div className="flex-1">
         <header className="flex flex-1 justify-center p-5 px-4">
-          <div className="flex bg-[#FDDEB3] rounded-md font-medium">
+          <div className="flex bg-[#FDDEB3] rounded-md font-medium opacity-0">
             <div
               role="button"
               tabIndex={1}
-              className="flex gap-2 items-center p-1 text-black leading-tight"
+              className="flex gap-2 items-center p-1 text-black leading-tight pointer-events-none"
               onClick={() => {
                 window.open(
                   "https://blog.cloudflare.com/launchpad-cohort4-dev-starter-pack/",
