@@ -137,7 +137,7 @@ export const tools: ToolOrCustomComponent[] = [
   {
     title: "Clerk",
     description: "Authentication and user management",
-    offer: "50% off Clerk's Pro plan for 6 months*",
+    offer: "50% off Clerk's Pro plan for 6 months",
     href: "https://go.clerk.com/starter-pack",
     details:
       'Apply to Startup Program and select "Dev Starter Pack" under "Are you working with any of these partners?"',
