@@ -41,7 +41,7 @@ export const tools: ToolOrCustomComponent[] = [
     description: "Build, deploy, and deliver code and AI apps globally",
     offer:
       "Access to Cloudflare for Startup Program and up to $250K of credits",
-    href: "https://www.cloudflare.com/forstartups/?2024-q4-dev-gbl-developers-ge-ge-general-pay_dev_starter_pack",
+    href: "https://www.cloudflare.com/en-gb/forstartups/?utm_medium=referral&utm_source=partner&utm_campaign=2024-q4-dev-gbl-developers-ge-ge-general-pay_dev_starter_pack",
     details:
       'Apply to our Startup Program and use code "devstarterpack" in promo code box.',
     icon: <Cloudflare />,
