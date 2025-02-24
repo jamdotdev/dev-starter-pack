@@ -114,17 +114,6 @@ export const tools: ToolOrCustomComponent[] = [
     category: "Write code",
   },
   {
-    customComponent: (
-      <Banner
-        title="Join the pack"
-        url="https://8wvzuv0oszm.typeform.com/apply-devpack"
-        buttonText="Contact"
-        backgroundImage="/join-the-pack.webp"
-      />
-    ),
-    id: "1",
-  },
-  {
     title: "Mixpanel",
     description: "Product analytics for web and mobile apps",
     offer: "First year free with enterprise-level features",
@@ -152,6 +141,17 @@ export const tools: ToolOrCustomComponent[] = [
     details: "",
     icon: <Algolia />,
     category: "Connect code",
+  },
+  {
+    customComponent: (
+      <Banner
+        title="Join the pack"
+        url="https://8wvzuv0oszm.typeform.com/apply-devpack"
+        buttonText="Contact"
+        fullWidth={true}
+      />
+    ),
+    id: "1",
   },
 ];
 
