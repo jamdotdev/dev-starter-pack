@@ -21,7 +21,7 @@ export const tools: ToolOrCustomComponent[] = [
   {
     title: "Jam",
     description: "Catch bugs and resolve them faster",
-    offer: "6 months of Jam Pro for free",
+    offer: "20% off Jam's Team plan for 6 months",
     href: "https://jam.dev/?ref=devstarterpack",
     details: "",
     icon: <Jam />,
